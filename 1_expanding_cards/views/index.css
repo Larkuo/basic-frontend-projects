@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.img-sm {
+    width: 5%;
+    height: 35rem;
+    background-size: auto 100%;
+    border-radius: 2rem;
+}
+
+.img-lg {
+    width: 60%;
+    height: 35rem;
+    background-size: auto 100%;
+    border-radius: 2rem;
+}
