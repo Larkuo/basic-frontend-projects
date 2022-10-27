@@ -8,47 +8,101 @@
 </head>
 <script>
     const onClickImage = (input_id) => {
-        const ids = ['i-1', 'i-2', 'i-3', 'i-4', 'i-5']
-        ids.map(id => 
-            input_id === id?(
+        const divs = ['i-1', 'i-2', 'i-3', 'i-4', 'i-5']
+        const btns = ['a-1', 'a-2', 'a-3', 'a-4', 'a-5']
+
+        divs.map((id, index) => {
+            if(input_id === id){
                 document.getElementById(id).className = 'img-lg'
-            ):(
+                document.getElementById(btns[index]).style.display = 'block'
+            }else{
                 document.getElementById(id).className = 'img-sm'
-            ));
+                document.getElementById(btns[index]).style.display = 'none'
+            }
+        });
     }
 </script>
 <body>
     <div class="main-container">
         <div
-            id="i-1"
-            class="img-lg"
-            style="background-image: url('../assets/img_1.jpg')"
-            onclick="onClickImage('i-1')"
-        ></div>
+        id="i-1"
+        class="img-lg"
+        style="background-image: url('../assets/img_1.jpg')"
+        onclick="onClickImage('i-1')"
+        >
+            <a 
+            id="a-1"
+            href="https://unsplash.com/photos/jbtfM0XBeRc"
+            target='_blank'
+            style="display: block;"
+            >
+                <button id="btn-1">Image Source</button>
+            </a>
+        </div>
+        
         <div
-            id="i-2"
-            class="img-sm"
-            style="background-image: url('../assets/img_2.jpg')"
-            onclick="onClickImage('i-2')"
-        ></div>
+        id="i-2"
+        class="img-sm"
+        style="background-image: url('../assets/img_2.jpg')"
+        onclick="onClickImage('i-2')"
+        >
+            <a 
+            id="a-2"
+            href="https://unsplash.com/photos/ShhuLsZREvM"
+            target='_blank'
+            style="display: none;"
+            >
+                <button id="btn-2">Image Source</button>
+            </a>
+        </div>
+
         <div
-            id="i-3"
-            class="img-sm"
-            style="background-image: url('../assets/img_3.jpg')"
-            onclick="onClickImage('i-3')"
-        ></div>
+        id="i-3"
+        class="img-sm"
+        style="background-image: url('../assets/img_3.jpg')"
+        onclick="onClickImage('i-3')"
+        >
+            <a 
+            id="a-3"
+            href="https://unsplash.com/photos/UUjxTEET0c0"
+            target='_blank'
+            style="display: none;"
+            >
+                <button id="btn-3">Image Source</button>
+            </a>
+        </div>
+
         <div
-            id="i-4"
-            class="img-sm"
-            style="background-image: url('../assets/img_4.jpg')"
-            onclick="onClickImage('i-4')"
-        ></div>
+        id="i-4"
+        class="img-sm"
+        style="background-image: url('../assets/img_4.jpg')"
+        onclick="onClickImage('i-4')"
+        >
+            <a 
+            id="a-4"
+            href="https://unsplash.com/photos/pVoEPpLw818"
+            target='_blank'
+            style="display: none;"
+            >
+                <button id="btn-4">Image Source</button>
+            </a>
+        </div>
+
         <div
-            id="i-5"
-            class="img-sm"
-            style="background-image: url('../assets/img_5.jpg')"
-            onclick="onClickImage('i-5')"
-        ></div>
+        id="i-5"
+        class="img-sm"
+        style="background-image: url('../assets/img_5.jpg')"
+        onclick="onClickImage('i-5')"
+        >
+            <a 
+            id="a-5"
+            href="https://unsplash.com/photos/wQLAGv4_OYs"
+            target='_blank'
+            style="display: none;"
+            >
+                <button id="btn-5">Image Source</button>
+            </a>
+        </div>
     </div>
 </body>
 </html>
