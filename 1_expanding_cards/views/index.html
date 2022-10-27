@@ -6,13 +6,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css">
 </head>
+<script>
+    const onClickImage = (input_id) => {
+        const ids = ['i-1', 'i-2', 'i-3', 'i-4', 'i-5']
+        ids.map(id => 
+            input_id === id?(
+                document.getElementById(id).className = 'img-lg'
+            ):(
+                document.getElementById(id).className = 'img-sm'
+            ));
+    }
+</script>
 <body>
     <div class="main-container">
-        <div class="img-lg" style="background-image: url('../assets/img_1.jpg')"></div>
-        <div class="img-sm" style="background-image: url('../assets/img_2.jpg')"></div>
-        <div class="img-sm" style="background-image: url('../assets/img_3.jpg')"></div>
-        <div class="img-sm" style="background-image: url('../assets/img_4.jpg')"></div>
-        <div class="img-sm" style="background-image: url('../assets/img_5.jpg')"></div>
+        <div
+            id="i-1"
+            class="img-lg"
+            style="background-image: url('../assets/img_1.jpg')"
+            onclick="onClickImage('i-1')"
+        ></div>
+        <div
+            id="i-2"
+            class="img-sm"
+            style="background-image: url('../assets/img_2.jpg')"
+            onclick="onClickImage('i-2')"
+        ></div>
+        <div
+            id="i-3"
+            class="img-sm"
+            style="background-image: url('../assets/img_3.jpg')"
+            onclick="onClickImage('i-3')"
+        ></div>
+        <div
+            id="i-4"
+            class="img-sm"
+            style="background-image: url('../assets/img_4.jpg')"
+            onclick="onClickImage('i-4')"
+        ></div>
+        <div
+            id="i-5"
+            class="img-sm"
+            style="background-image: url('../assets/img_5.jpg')"
+            onclick="onClickImage('i-5')"
+        ></div>
     </div>
 </body>
 </html>
