@@ -34,6 +34,10 @@
     opacity: 0.5;
 }
 
+.img-sm:hover {
+    opacity: 0.7;
+}
+
 .img-lg {
     width: 60%;
     height: 35rem;
@@ -47,7 +51,7 @@
     transition: width .85s ease;
 }
 
-button{
+button {
     font-size: 1rem;
     background-color: rgba(0,0,0,0.5);
     border: 0.1rem solid white;
@@ -57,6 +61,12 @@ button{
     margin-left: 1rem;
     margin-bottom: 1rem;
     transition: display .85s ease;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.5);
+    border: 0.1rem solid black;
+    color: black;
 }
 
 @media(max-width: 600px){
