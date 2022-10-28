@@ -6,6 +6,26 @@
     background-color: white;
 }
 
+#i-1 {
+    background-image: url('../assets/img_1.jpg');
+}
+
+#i-2 {
+    background-image: url('../assets/img_2.jpg');
+}
+
+#i-3 {
+    background-image: url('../assets/img_3.jpg');
+}
+
+#i-4 {
+    background-image: url('../assets/img_4.jpg');
+}
+
+#i-5 {
+    background-image: url('../assets/img_5.jpg');
+}
+
 .img-sm {
     width: 5%;
     height: 35rem;
