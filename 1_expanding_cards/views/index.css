@@ -5,6 +5,7 @@
     justify-content: space-around;
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: white;
 }
 
 .img-sm {
@@ -12,6 +13,7 @@
     height: 35rem;
     background-size: auto 100%;
     border-radius: 2rem;
+    opacity: 0.5;
 }
 
 .img-lg {
@@ -26,6 +28,7 @@
     align-content: left;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    transition: width .85s ease;
 }
 
 button{
@@ -35,4 +38,5 @@ button{
     border-radius: 0.5rem;
     color: white;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    transition: display .85s ease;
 }
