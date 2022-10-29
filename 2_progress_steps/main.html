@@ -10,7 +10,7 @@
 <body>
     <div id="num-container" class="container">
         <div id="num-1" class="num-active">1</div>
-        <div id="bar-1" class="bar-active"></div>
+        <div id="bar-1" class="bar-inactive"></div>
         <div id="num-2" class="num-inactive">2</div>
         <div id="bar-2" class="bar-inactive"></div>
         <div id="num-3" class="num-inactive">3</div>
@@ -18,8 +18,10 @@
         <div id="num-4" class="num-inactive">4</div>
     </div>
     <div id="btn-container" class="container">
-        <button disabled id="prev-btn" class="btn-inactive">Prev</button>
-        <button id="next-btn" class="btn-active">Next</button>
+        <button disabled id="prev-btn" class="btn-inactive"
+            onclick="handlePrev()">Prev</button>
+        <button id="next-btn" class="btn-active"
+            onclick="handleNext()">Next</button>
     </div>
 </body>
 </html>
