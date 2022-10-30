@@ -10,25 +10,19 @@ function handleNext () {
 
     if(arr_len < 4){
         let next_num = document.getElementById(num_ids[arr_len]);
-        let next_bar = document.getElementById(bar_ids[arr_len - 1]);
+        let next_bar = document.getElementById(bar_ids[arr_len-1]);
 
-        next_bar.className = 'bar-active';
+        next_bar.style.width = '5rem';
         next_num.className = 'num-active';
-
     }
 
     active_arr = document.getElementsByClassName('num-active');
     arr_len = active_arr.length;
 
     if(arr_len < 4 && arr_len > 1){
-        prev_button.className = 'btn-active';
         prev_button.disabled = false;
     }else if(arr_len === 4){
-        next_button.className = 'btn-inactive';
         next_button.disabled = true;
-
-        let prev_button = document.getElementById('prev-btn');
-        prev_button.className = 'btn-active';
         prev_button.disabled = false;
     }
 }
@@ -44,7 +38,6 @@ function handlePrev () {
     let prev_button = document.getElementById('prev-btn');
 
     if(arr_len < 4 && arr_len > 1){
-        prev_button.className = 'btn-active';
         prev_button.disabled = false;
     }
 
@@ -52,18 +45,17 @@ function handlePrev () {
         let prev_num = document.getElementById(num_ids[arr_len-1]);
         let prev_bar = document.getElementById(bar_ids[arr_len - 2]);
 
-        prev_bar.className = 'bar-inactive';
+        prev_bar.style.width = '0rem';
         prev_num.className = 'num-inactive';
     }
 
     active_arr = document.getElementsByClassName('num-active');
     arr_len = active_arr.length;
 
-    if(arr_len === 1){
-        next_button.className = 'btn-active';
+    if(arr_len < 4 && arr_len > 1){
         next_button.disabled = false;
-
-        prev_button.className = 'btn-inactive';
+    }else if(arr_len === 1){
+        next_button.disabled = false;
         prev_button.disabled = true;
     }
 }

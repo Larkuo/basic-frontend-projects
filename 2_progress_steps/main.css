@@ -46,19 +46,17 @@ body {
 }
 
 .bar-active {
-    width: 5rem;
+    width: 0rem;
     height: 0.25rem;
     background-color: #3498db;
+    transition: width 0.5s linear;
 }
 
 .bar-inactive {
     width: 5rem;
     height: 0.25rem;
     background-color: #e0e0e0;
-}
-
-#btn-container {
-    justify-content: space-between;
+    transition: background-color 0.5s linear;
 }
 
 button {
@@ -70,22 +68,20 @@ button {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: 1rem;
-}
-
-button:disabled:hover {
-    cursor: not-allowed;
-}
-
-.btn-active {
     color: white;
     background-color: #3498db;
 }
 
-.btn-active:hover {
+button:hover {
     box-shadow: 0.1rem 0.1rem 0.8rem rgba(153, 153, 153, 0.8);
 }
 
-.btn-inactive {
-    color: 999;
+button:disabled {
+    color: #999;
     background-color: #e0e0e0;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
 }
