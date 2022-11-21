@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>3 - Rotating Navigation Animation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="semi-circle" class="circle-div">
+        <div id="rotate-div" class="no-rotate">
+            <img
+                id='close-icon' class="circle-icon"
+                src="./assets/close-icon.png"
+                onclick="onClickMenu()"/>
+            <img
+                id='menu-main-icon' class="circle-icon"
+                src="./assets/menu-icon.png"
+                onclick="onClickMenu()"/>
+        </div>
+    </div>
+    <div id="white-div-main" class="no-rotate-white-div">
+        <div id="inner-white-div">
+            <p id="article-title">Dog Article</p>
+            <p id="author"><em>Larkuo W.-T.</em></p>
+            <p id="p-1" class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Magnam culpa eum atque quam, sunt alias incidunt perferendis 
+            ipsa, inventore numquam vero odio eos ad, praesentium quo 
+            quas perspiciatis sapiente nostrum.
+            </p>
+            <p id="sub-title">The Dog</p>
+            <img id="dog-img" src="./assets/dog-img.jpg" />
+            <p id="p-2" class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Magnam culpa eum atque quam, sunt alias incidunt perferendis 
+            ipsa, inventore numquam vero odio eos ad, praesentium quo 
+            quas perspiciatis sapiente nostrum.
+            </p>
+        </div>
+    </div>
+    <ul id="menu-main-container">
+        <li id="home-button" class="menu-label home-start">
+            <img src="./assets/home-icon.png" class="menu-list-icon"/>
+            <a href="#">HOME</a>
+        </li>
+        <li id="about-button" class="menu-label">
+            <img src="./assets/about-icon.png" class="menu-list-icon"/>
+            <a href="#">ABOUT</a>
+        </li>
+        <li id="contact-button" class="menu-label">
+            <img src="./assets/contact-icon.png" class="menu-list-icon"/>
+            <a href="#">CONTACT</a>
+        </li>
+    </ul>
+</body>
+</html>
