@@ -31,12 +31,12 @@ body {
 
 .yes-rotate {
     transform: rotate(-180deg);
-    transition: transform 0.8s linear;
+    transition: transform 0.5s linear;
 }
 
 .no-rotate {
     transform: none;
-    transition: transform 0.8s linear;
+    transition: transform 0.5s linear;
 }
 
 .circle-icon {
@@ -80,13 +80,13 @@ body {
 .yes-rotate-white-div {
     transform: rotate(-20deg);
     transform-origin: top left;
-    transition: transform 0.8s linear;
+    transition: transform 0.5s linear;
 }
 
 .no-rotate-white-div {
     transform: none;
     transform-origin: top left;
-    transition: transform 0.8s linear;
+    transition: transform 0.5s linear;
 }
 
 #article-title {
@@ -132,6 +132,10 @@ body {
     padding-bottom: 3rem;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .menu-list-icon {
     width: 1.2rem;
     margin-right: 0.5rem;
@@ -154,12 +158,32 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-.home-start {
-    margin-left: 0rem;
-    transition: margin-left 0.3s ease-in;
+.home-no-rotate {
+    margin-left: -8rem;
+    transition: margin-left 0.5s linear;
 }
 
-.home-end {
-    margin-left: 2rem;
-    transition: margin-left 0.3s ease-in;
+.about-no-rotate {
+    margin-left: -8rem;
+    transition: margin-left 0.5s linear;
+}
+
+.contact-no-rotate {
+    margin-left: -8rem;
+    transition: margin-left 0.5s linear;
+}
+
+.home-yes-rotate {
+    margin-left: 2.5rem;
+    transition: margin-left 0.5s linear;
+}
+
+.about-yes-rotate {
+    margin-left: 3.15rem;
+    transition: margin-left 0.5s linear;
+}
+
+.contact-yes-rotate {
+    margin-left: 3.5rem;
+    transition: margin-left 0.5s ease-in;
 }
